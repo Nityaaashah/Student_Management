@@ -124,10 +124,8 @@ public class StudentServiceImpl implements StudentService {
 				.orElseThrow(() -> new RuntimeException("Course not found with ID: " + courseId));
 
 		student.getCourses().remove(course);
-		//course.getStudent().remove(student);
-
 		studentRepository.save(student);
-		//courseRepository.save(course);
+
 	}
 
 }
