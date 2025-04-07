@@ -23,7 +23,7 @@ public class Address {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String type; // Permanent, Correspondence, Current
+	private String type; 
 	private String street;
 	private String city;
 	private String state;
